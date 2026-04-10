@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>Chain Reaction</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-container">
+            <div id="grid" ></div>
+        </div>
+        <div class="right-container">
+
+        </div>
+    </div>
+
+    <dialog id="myDialog">
+        <p class="dialog-title">Congratulations!</p>
+        <p class="player"></p>
+        <button id="closeDialogButton">Close</button>
+        <button id="restartDialogButton">Restart</button>
+    </dialog>
+
+    <dialog id="toast">
+        <p class="toast-title"></p>
+    </dialog>
+
+    <script src="http://localhost:8787/socket.io/socket.io.js"></script>
+    <script src="./home.js" ></script>
+    
+</body>
+</html>

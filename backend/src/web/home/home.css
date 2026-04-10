@@ -1,0 +1,159 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: relative;
+}
+
+.main-container{
+    width: 100%;
+    height: screen;
+    display: flex;
+    /* background-color: burlywood; */
+}
+
+
+.left-container{
+    /* width: 50%; */
+    /* height: 100%; */
+    background-color: #007070;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.right-container{
+    height: 100vh;
+    background: #000;
+}
+
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(17,1fr);
+  border: 1px solid #999;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px #999;
+  padding: 4px;
+  align-items: center;
+  width: max-content;
+}
+
+.cell {
+  width: 48px;
+  position: relative;
+  height: 38px;
+  border: 0.5px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cell:hover {
+  background: #009090;
+}
+
+
+@media (max-width: 850px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+  .left-container{
+    width: 100%;
+  }
+  .right-container{
+    width: 100%;
+  }
+}
+
+.ball {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* Positions for balls */
+.ball-1 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.ball-2:nth-child(1) { top: 35%; left: 20%; }
+.ball-2:nth-child(2) { top: 35%; left: 60%; }
+
+.ball-3:nth-child(1) { top: 20%; left: 50%; transform: translateX(-50%); }
+.ball-3:nth-child(2) { bottom: 10%; left: 20%; }
+.ball-3:nth-child(3) { bottom: 10%; right: 20%; }
+
+
+#myDialog {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  background-color: #fff;
+  height: 150px;
+  box-shadow: 0px 0px 10px #999;
+}
+
+#closeDialogButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #007070;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#restartDialogButton {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #007070;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dialog-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 10px #999;
+}
