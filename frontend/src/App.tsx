@@ -1,5 +1,9 @@
+import Home from "./components/home/Home";
+
 function App() {
-  return <div>App</div>;
+  return <>
+  <Home/>
+  </>;
 }
 
 export default App;
