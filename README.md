@@ -2,7 +2,7 @@
 
 A real-time multiplayer **Chain Reaction** game built using **React, TypeScript, Node.js, Express, Socket.IO, and Tailwind CSS**. Players can create or join a room and compete in a strategic chain reaction battle.
 
-![Thumbnail](./thumbnail.png)
+![Thumbnail](./thumbnail.webp)
 
 ---
 
